@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,267 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*Global*/
+a{
+ text-decoration: none; 
+ color: black;
+}
+
+/*AboutMe*/
+#bigBox-aboutMe{
+  background-color: rgba(39, 51, 47, 0.774);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+#aboutMe{
+  margin-top: 10px;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#aboutMe-text{
+width: 50%;
+}
+
+#aboutMe-text-content{
+
+  height: 300px;
+  text-align: justify;
+  font-size: large;
+  color: aliceblue;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#aboutMe-img-box{
+margin-top: 5px;
+}
+
+#aboutMe-img{
+  border-radius: 20px;
+width: 200px;
+}
+
+/*Projects*/
+#bigBox-projects{
+  background-color: #1a1519;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%2360ec67' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  height: 180vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects-title{
+  margin-top: 10px;
+  color: aliceblue;
+}
+
+#projects{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects-blockOfTwo{
+  width: 90%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#projects-first-block{
+
+}
+
+#projects-second-block{
+
+}
+
+.projects-card{
+  height: 100%;
+  width: 200px;
+  padding: 3px;
+  border: 3px solid rgb(168, 168, 168);
+  background-color: rgb(168, 168, 168);
+  box-shadow: 1px 1px 2px rgba(43, 1, 121, 0.856);
+  border-radius: 20px;
+}
+
+.projects-title{
+  color: rgba(0, 0, 0, 0.856);
+}
+
+.projects-demo{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+border-radius: 20px;
+background: rgba(47, 151, 117, 0.774);
+}
+
+.projects-demo:hover{
+  background-color: rgba(255, 49, 83, 0.822);
+  transition: background .5s linear .2s;
+}
+
+.projects-link-demo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.projects-link-demo-img{
+  width: 100%;
+  height: 350px;
+  border-radius: 20px 20px 0 0;
+}
+
+.projects-demo-txt{
+  color: aliceblue;
+  padding: 10px;
+}
+
+.projects-demo-txt:hover{
+  color: rgba(0, 0, 0, 0.856);
+}
+
+.projects-repo{
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+}
+
+.projects-repo-txt{
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.projects-repo-txt:hover{
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.884);
+  border-radius: 20px;
+  transition: background .5s linear .2s;
+}
+
+/*ContactMe*/
+#bigBox-contactMe{
+
+height: 60vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+background: url(https://i.postimg.cc/xTghZ1y6/Picsart-23-04-18-16-29-22-847.png)  no-repeat center center/cover;
+}
+
+
+#contactMe-icons{
+width: 80%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+
+.contactMe-ico{
+width: 300px;
+height: 100px;
+}
+
+.contactMe-ico-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+svg{
+  height: 4.5em;
+  width: 4.5em;
+}
+
+svg:hover{
+  color: rgba(47, 151, 116, 0.89);
+  transition: color .5s linear .2s;
+}
+
+@media (max-width: 789px) {
+  #bigBox-aboutMe{
+    height: 120vh;
+  }
+
+  #aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #aboutMe-text{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    }
+
+  #aboutMe-text-content{
+    height: 400px;
+  }
+/*Projects*/
+  #bigBox-projects{
+    height: 450vh;
+  }
+  
+  #projects{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .projects-blockOfTwo{
+
+    width: 100%;
+    height: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .projects-card{
+    height: fit-content;
+    width: 100%;
+    padding: 3px;
+  }
+  
+  #bigBox-contactMe{
+
+    height: 50vh;
+    }
+  
+  svg{
+    height: 3.5em;
+    width: 3.5em;
+  }
+
 }
