@@ -222,7 +222,7 @@ svg:hover{
 
 @media (max-width: 789px) {
   #bigBox-aboutMe{
-    height: 120vh;
+    height: 140vh;
   }
 
   #aboutMe{
@@ -238,7 +238,7 @@ svg:hover{
     }
 
   #aboutMe-text-content{
-    height: 400px;
+    height: 580px;
   }
 /*Projects*/
   #bigBox-projects{
