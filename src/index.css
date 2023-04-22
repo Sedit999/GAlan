@@ -114,93 +114,6 @@ margin-left: -90px;
   color: aliceblue;
 }
 
-#projects{
-  width: 60%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.projects-blockOfTwo{
-  width: 90%;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.projects-card{
-  height: 100%;
-  width: 200px;
-  padding: 3px;
-  border: 3px solid rgb(168, 168, 168);
-  background-color: rgb(168, 168, 168);
-  box-shadow: 1px 1px 2px rgba(43, 1, 121, 0.856);
-  border-radius: 20px;
-}
-
-.projects-title{
-  color: rgba(0, 0, 0, 0.856);
-}
-
-.projects-demo{
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-border-radius: 20px;
-background: rgba(47, 151, 117, 0.774);
-}
-
-.projects-demo:hover{
-  background-color: rgba(255, 49, 83, 0.822);
-  transition: background .5s linear .2s;
-}
-
-.projects-link-demo{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.projects-link-demo-img{
-  width: 100%;
-  height: 350px;
-  border-radius: 20px 20px 0 0;
-}
-
-.projects-demo-txt{
-  color: aliceblue;
-  padding: 10px;
-}
-
-.projects-demo-txt:hover{
-  color: rgba(0, 0, 0, 0.856);
-}
-
-.projects-repo{
-  margin-top: 5px;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  width: 100%;
-}
-
-.projects-repo-txt{
-  display: flex;
-  justify-content: flex-end;
-  padding: 5px;
-}
-
-.projects-repo-txt:hover{
-  color: aliceblue;
-  background-color: rgba(0, 0, 0, 0.884);
-  border-radius: 20px;
-  transition: background .5s linear .2s;
-}
-
 /*ProjectsCards*/
 #bigBox-projectsCards{
   width: 100%;
@@ -212,7 +125,7 @@ background: rgba(47, 151, 117, 0.774);
   height: 500px;
   display: flex;
   flex-direction: column;
-  
+  align-items: center;
 }
 
 .projectCards-box-of-two{
@@ -272,6 +185,7 @@ margin-top: 5px;
 
 .projectCard-img{
   width: 100%;
+  cursor: pointer;
 }
 
 .projectCard-img:hover{
@@ -291,7 +205,7 @@ background: url(https://i.postimg.cc/xTghZ1y6/Picsart-23-04-18-16-29-22-847.png)
 
 
 #contactMe-icons{
-width: 80%;
+width: 100%;
 display: flex;
 align-items: center;
 justify-content: space-around;
@@ -299,7 +213,7 @@ justify-content: space-around;
 }
 
 .contactMe-ico{
-width: 300px;
+width: fit-content;
 height: 100px;
 }
 
@@ -307,8 +221,9 @@ height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: fit-content;
   height: 100%;
+
 }
 
 svg{
@@ -347,7 +262,7 @@ svg:hover{
 
 @media (max-width: 789px) {
   #bigBox-aboutMe{
-    height: 210vh;
+    height: auto;
   }
 
   #aboutMe{
@@ -377,38 +292,89 @@ svg:hover{
   }
  
   #aboutMe-img-box{
-    margin-top: 15px;
-    }
+    margin-top: 25px;
+  }
+
+  #aboutMe-img{
+  border-radius: 20px;
+  height: 90%;
+  width: 190%;
+  margin-left: -190px;
+  }
 
 /*Projects*/
   #bigBox-projects{
-    height: 450vh;
+    height: auto;
   }
-  
-  #projects{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .projects-blockOfTwo{
 
+  #bigBox-start-btn{
     width: 100%;
-    height: 1600px;
+    margin: 40px 0px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-content: center;
+    justify-content: center;
   }
   
-  .projects-card{
-    height: fit-content;
+  #start-btn-img{
+    width: 90%;
+  }
+
+  .projectCard-box-imgs{
+    margin-top: 80px;
     width: 100%;
-    padding: 3px;
+    height: 260vh;
+    display: flex;
+    flex-direction: column;
+
   }
-  
+
+  .projectCards-box-of-two{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ 
+  }
+
+  .projectCard-box-img{
+    width: 95%;
+    height: 40%;
+    animation-name: slideLeft;
+    animation-duration: 3s;
+    animation-delay: 0s;
+  }
+
+  .projectCard-box-img-up-second{
+    width: 90%;
+    height: 30%;
+ 
+    animation-name: slideLeft;
+    animation-duration: 3s;
+    animation-delay: 0s;
+  }
+
+  .projectCard-skills{
+    width: 90%;
+    height: 20%;
+    margin-right: 15px;
+  }
+
+  .projectCard-box-img-down{
+    width: 90%;
+    height: 40%;
+    animation-name: slideLeft;
+    animation-duration: 3s;
+    animation-delay: 0s;
+  }
+
+  .projectCard-img-down{
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+
+  /*ContactMe*/
   #bigBox-contactMe{
 
     height: 50vh;
