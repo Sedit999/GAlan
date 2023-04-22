@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,6 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Orbitron', sans-serif;
 }
 
 code {
@@ -26,55 +29,84 @@ a{
 
 /*AboutMe*/
 #bigBox-aboutMe{
-  background-color: rgba(39, 51, 47, 0.774);
+  background: url(https://i.gifer.com/3bLg.gif) no-repeat center center/cover;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  height: 70vh;
+  height: 100vh;
 }
 
 #aboutMe{
-  margin-top: 10px;
-  width: 90%;
+  
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #aboutMe-text{
-width: 50%;
+width: 90%;
+padding: 15vh 75px;
 }
 
 #aboutMe-text-content{
-
-  height: 300px;
+  background: #1a1519;
+  height: fit-content;
+  padding: 10px;
   text-align: justify;
   font-size: large;
   color: aliceblue;
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
+#aboutMe-text h2{
+  margin-top: 10px;
+  padding: 10px;
+  color: aliceblue;
+  background-color: #1a1519;
+}
+
+#aboutMe-text-content div{
+  margin-top: 10px
+}
+
 #aboutMe-img-box{
-margin-top: 5px;
+width: 100%;
+height: 100%;
+overflow: hidden;
 }
 
 #aboutMe-img{
-  border-radius: 20px;
-width: 200px;
+border-radius: 20px;
+height: 100%;
+width: 140%;
+margin-left: -90px;
 }
 
 /*Projects*/
+#bigBox-start-btn{
+  width: 500px;
+}
+
+#start-btn-img{
+  width: 100%;
+  cursor: pointer;
+}
+
+#start-btn-img:hover{
+  padding: 5px;
+}
+
 #bigBox-projects{
   background-color: #1a1519;
   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%2360ec67' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  height: 180vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #projects-title{
@@ -97,14 +129,6 @@ width: 200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-#projects-first-block{
-
-}
-
-#projects-second-block{
-
 }
 
 .projects-card{
@@ -177,6 +201,83 @@ background: rgba(47, 151, 117, 0.774);
   transition: background .5s linear .2s;
 }
 
+/*ProjectsCards*/
+#bigBox-projectsCards{
+  width: 100%;
+  margin-top: -25px;
+}
+
+.projectCard-box-imgs{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.projectCards-box-of-two{
+  width: 100%;
+  display: flex;
+}
+
+#projectCards-box-of-two-down{
+margin-top: 5px;
+}
+
+.projectCard-box-img{
+  width: 30%;
+  height: 40%;
+  margin-left: 20px;
+  animation-name: slideLeft;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.projectCard-box-img-up-second{
+  width: 28%;
+  height: 30%;
+  margin-left: 20px;
+  animation-name: slideLeft;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.projectCard-box-img-down{
+  width: 30%;
+  height: 40%;
+  animation-name: slideLeft;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.projectCard-img-down{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.projectCard-skills{
+  width: 30%;
+  height: 90%;
+  border: 5px solid rgb(27, 202, 173);
+  background-color: #1a1519;
+}
+
+@keyframes slideLeft {
+  0%   { margin-left:-850px; }
+  25%  { margin-left:-850px; }
+  50%  { margin-left:20px; }
+  75%  { margin-left:20px; }
+  100% { margin-left:20px; }
+}
+
+.projectCard-img{
+  width: 100%;
+}
+
+.projectCard-img:hover{
+  width: 98%;
+}
+
 /*ContactMe*/
 #bigBox-contactMe{
 
@@ -220,9 +321,33 @@ svg:hover{
   transition: color .5s linear .2s;
 }
 
+@media (max-width: 1090px){
+  #bigBox-aboutMe{
+  height: 110vh;
+}
+}
+
+@media (max-width: 970px){
+  #bigBox-aboutMe{
+  height: 120vh;
+}
+}
+
+@media (max-width: 885px){
+  #bigBox-aboutMe{
+  height: 130vh;
+}
+}
+
+@media (max-width: 810px){
+  #bigBox-aboutMe{
+  height: 140vh;
+}
+}
+
 @media (max-width: 789px) {
   #bigBox-aboutMe{
-    height: 140vh;
+    height: 210vh;
   }
 
   #aboutMe{
@@ -232,14 +357,29 @@ svg:hover{
   }
 
   #aboutMe-text{
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    }
+    width: 90%;
+    padding: 0 15px;
+  }
 
   #aboutMe-text-content{
-    height: 580px;
+    background: #1a1519;
+    height: 730px;
+    text-align: justify;
+    font-size: large;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    
   }
+
+  #aboutMe-text-content div{
+    margin-top: 0px
+  }
+ 
+  #aboutMe-img-box{
+    margin-top: 15px;
+    }
+
 /*Projects*/
   #bigBox-projects{
     height: 450vh;

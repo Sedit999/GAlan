@@ -30,7 +30,7 @@ function AboutMe() {
           </div>
           <div id="aboutMe-img-box">
             <img
-              src="https://i.postimg.cc/XYK6C4Y8/Microsoft-Teams-image-1.jpg"
+              src="https://i.postimg.cc/TwDyN5rW/mifoto1.png"
               alt="picc"
               id="aboutMe-img"
             />
