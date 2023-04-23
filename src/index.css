@@ -173,6 +173,26 @@ margin-top: 5px;
   height: 90%;
   border: 5px solid rgb(27, 202, 173);
   background-color: #1a1519;
+  color: aliceblue; 
+}
+
+.projectCard-skills-txt{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectCard-skills-list{
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 15px;
+}
+
+.projectCard-skills-list-maring{
+  margin-top: 5px;
 }
 
 @keyframes slideLeft {
@@ -194,7 +214,7 @@ margin-top: 5px;
 
 /*ContactMe*/
 #bigBox-contactMe{
-
+padding-top: 50px;
 height: 60vh;
 display: flex;
 flex-direction: column;
@@ -205,6 +225,7 @@ background: url(https://i.postimg.cc/xTghZ1y6/Picsart-23-04-18-16-29-22-847.png)
 
 
 #contactMe-icons{
+  margin-top: -100px;
 width: 100%;
 display: flex;
 align-items: center;
@@ -236,27 +257,84 @@ svg:hover{
   transition: color .5s linear .2s;
 }
 
-@media (max-width: 1090px){
-  #bigBox-aboutMe{
-  height: 110vh;
-}
-}
-
-@media (max-width: 970px){
-  #bigBox-aboutMe{
-  height: 120vh;
-}
-}
-
 @media (max-width: 885px){
   #bigBox-aboutMe{
-  height: 130vh;
-}
+  height: fit-content;
 }
 
-@media (max-width: 810px){
-  #bigBox-aboutMe{
-  height: 140vh;
+/*Projects*/
+#bigBox-projects{
+  height: auto;
+}
+
+#bigBox-start-btn{
+  width: 100%;
+  margin: 40px 0px;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+#start-btn-img{
+  width: 90%;
+}
+
+.projectCard-box-imgs{
+  margin-top: 80px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.projectCards-box-of-two{
+  width: 100%;
+  height: 170vh;
+  display: flex;
+  flex-direction: column-reverse;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.projectCard-box-img{
+  width: 60%;
+  height: 40%;
+  animation-name: slideLeft;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.projectCard-box-img-up-second{
+  width: 60%;
+  height: 30%;
+
+  animation-name: slideLeft;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.projectCard-skills{
+  width: 60%;
+  height: 20%;
+  margin-right: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.projectCard-box-img-down{
+  top: 50px;
+  width: 60%;
+  height: 40%;
+  animation-name: slideLeft;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.projectCard-img-down{
+  
+  margin-top: -100px;
+  margin-left: 20px;
 }
 }
 
@@ -278,7 +356,7 @@ svg:hover{
 
   #aboutMe-text-content{
     background: #1a1519;
-    height: 730px;
+    height: fit-content;
     text-align: justify;
     font-size: large;
     color: aliceblue;
@@ -303,76 +381,76 @@ svg:hover{
   }
 
 /*Projects*/
-  #bigBox-projects{
-    height: auto;
-  }
+#bigBox-projects{
+  height: auto;
+}
 
-  #bigBox-start-btn{
-    width: 100%;
-    margin: 40px 0px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
-  
-  #start-btn-img{
-    width: 90%;
-  }
+#bigBox-start-btn{
+  width: 100%;
+  margin: 40px 0px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
 
-  .projectCard-box-imgs{
-    margin-top: 80px;
-    width: 100%;
-    height: 260vh;
-    display: flex;
-    flex-direction: column;
+#start-btn-img{
+  width: 90%;
+}
 
-  }
+.projectCard-box-imgs{
+  margin-top: 80px;
+  width: 100%;
+  height: 260vh;
+  display: flex;
+  flex-direction: column;
 
-  .projectCards-box-of-two{
-    width: 100%;
-    height: 130vh;
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-   justify-content: center;
- 
-  }
+}
 
-  .projectCard-box-img{
-    width: 95%;
-    height: 40%;
-    animation-name: slideLeft;
-    animation-duration: 3s;
-    animation-delay: 0s;
-  }
+.projectCards-box-of-two{
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-direction: column-reverse;
+ align-items: center;
+ justify-content: center;
 
-  .projectCard-box-img-up-second{
-    width: 90%;
-    height: 30%;
- 
-    animation-name: slideLeft;
-    animation-duration: 3s;
-    animation-delay: 0s;
-  }
+}
 
-  .projectCard-skills{
-    width: 90%;
-    height: 20%;
-    margin-right: 15px;
-  }
+.projectCard-box-img{
+  width: 95%;
+  height: 40%;
+  animation-name: slideLeft;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
 
-  .projectCard-box-img-down{
-    width: 90%;
-    height: 40%;
-    animation-name: slideLeft;
-    animation-duration: 3s;
-    animation-delay: 0s;
-  }
+.projectCard-box-img-up-second{
+  width: 90%;
+  height: 30%;
 
-  .projectCard-img-down{
-    margin-top: 100px;
-    margin-left: 20px;
-  }
+  animation-name: slideLeft;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.projectCard-skills{
+  width: 90%;
+  height: 20%;
+  margin-right: 15px;
+}
+
+.projectCard-box-img-down{
+  width: 90%;
+  height: 40%;
+  animation-name: slideLeft;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.projectCard-img-down{
+  margin-top: -100px;
+  margin-left: 20px;
+}
 
   /*ContactMe*/
   #bigBox-contactMe{

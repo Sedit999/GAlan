@@ -16,12 +16,7 @@ function AboutMe() {
                 genera por medio de éste. Me gusta mucho manterme aprendidiendo
                 y seguir actualizado.
               </div>
-              <div>
-                Actualmente el ambito donde mejor me puedo desenvolver por ahora
-                es en el front-end. Por el momento no he tenido una experiencia
-                laboral, actualmente me encuentro en busca de experiencia y
-                estoy abierto a oportunidades.
-              </div>
+
               <div>
                 En mi tiempo libre suelo patinar, jugar algún videojuego o ver
                 alguna serie. Amo todo lo sci-fi
