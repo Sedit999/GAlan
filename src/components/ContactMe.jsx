@@ -13,7 +13,7 @@ function ContactMe() {
         <h2 id="contactMe-title">Contáctame</h2>
         <div id="contactMe-icons">
           <div className="contactMe-ico">
-            <Link to="http://wa.me/1525528498032" target="_blank">
+            <Link to="http://wa.me/15528478032" target="_blank">
               <div className="contactMe-ico-icon">
                 <WhatsAppOutlined />
               </div>
