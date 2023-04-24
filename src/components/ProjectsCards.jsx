@@ -72,10 +72,10 @@ function ProjectsCards() {
                 </div>
                 <div>- Liderazgo</div>
                 <div>- Autodidacta</div>
-                <div>- Compromiso social</div>
                 <div>- Adaptación al cambio</div>
                 <div>- Asertividad</div>
                 <div>- Mentalidad ágil</div>
+            
               </div>
               <div>
                 <div>hardSkills:</div>
