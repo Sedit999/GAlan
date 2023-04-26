@@ -50,12 +50,12 @@ padding: 15vh 75px;
 }
 
 #aboutMe-text-content{
-  background: #1a1519;
+  background: aliceblue;
   height: fit-content;
   padding: 10px;
   text-align: justify;
   font-size: large;
-  color: aliceblue;
+  color: #1a1519;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
