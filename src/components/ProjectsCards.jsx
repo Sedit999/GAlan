@@ -27,11 +27,7 @@ function ProjectsCards() {
     <>
       <div id="bigBox-projectsCards">
         <div className="projectCard-box-imgs">
-          <Switch
-            checkedChildren="repo"
-            unCheckedChildren="demo"
-            onChange={handleLink}
-          ></Switch>
+          
           <div className="projectCards-box-of-two inverse">
             <div className="projectCard-box-img">
               <Link to={link[0]} target="_blank">
@@ -54,6 +50,11 @@ function ProjectsCards() {
             <div className="projectCard-skills projectCard-box-img">
               <div className="projectCard-skills-txt">Link activo para: </div>
               <div className="projectCard-skills-txt">{route}</div>
+              <Switch
+            checkedChildren="repo"
+            unCheckedChildren="demo"
+            onChange={handleLink}
+          ></Switch>
             </div>
           </div>
 
